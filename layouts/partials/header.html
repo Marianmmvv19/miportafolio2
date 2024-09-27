@@ -1,3 +1,113 @@
+<style>
+  .elegant-header {
+    position: relative;
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+
+.big-img {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header-title {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.header-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-title a:hover {
+    color: #f8b500;
+}
+
+.header-subtitle {
+    font-size: 1.5em;
+    color: #f8b500;
+}
+
+.header-subtitle a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-subtitle a:hover {
+    color: #fff;
+}
+
+.no-img {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.no-img h1 {
+    color: #333;
+}
+
+.intro-header.no-img h1 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.intro-header.no-img h1 a:hover {
+    color: #f8b500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img-desc {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: none;
+}
+
+.intro-header:hover .img-desc {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5em;
+    }
+    .header-subtitle {
+        font-size: 1.2em;
+    }
+}
+
+</style>
 {{- partial "load-photoswipe-theme.html" . }}
 
 {{ if .IsHome }}
@@ -26,27 +136,29 @@
       {{end}}></div>
   {{ end }}
 
-  <header class="header-section {{ if $bigimg }}has-img{{ end }}">
+  <header class="header-section elegant-header {{ if $bigimg }}has-img{{ end }}">
     {{ if $bigimg }}
       {{ $firstimg := index $bigimg 0 }}
       <div class="intro-header big-img" style="background-image: url('{{$firstimg.src}}');">
+        <a href="{{ .Permalink }}" class="header-overlay"></a>
         {{ $subtitle := $.Scratch.Get "subtitle" }}
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
               <div class="{{ .Type }}-heading">
-                <h1>{{ with $.Scratch.Get "title" }}{{.}}{{ else }}<br/>{{ end }}</h1>
-                  {{ if $subtitle }}
-                    {{ if eq .Type "page" }}
-                      <hr class="small">
-                      <span class="{{ .Type }}-subheading">{{ $subtitle }}</span>
-                    {{ else }}
-                      <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
-                    {{ end }}
-                  {{ end }}
-                  {{ if eq .Type "post" }}
-                    {{ partial "post_meta.html" . }}
-                  {{ end }}
+                <h1 class="header-title">
+                  <a href="{{ .Permalink }}">
+                    {{ with $.Scratch.Get "title" }}{{.}}{{ else }}<br/>{{ end }}
+                  </a>
+                </h1>
+                {{ if $subtitle }}
+                  <h2 class="{{ .Type }}-subheading header-subtitle">
+                    <a href="{{ .Permalink }}">{{ $subtitle }}</a>
+                  </h2>
+                {{ end }}
+                {{ if eq .Type "post" }}
+                  {{ partial "post_meta.html" . }}
+                {{ end }}
               </div>
             </div>
           </div>
@@ -54,40 +166,33 @@
         <span class="img-desc" style="display: {{ cond (isset $firstimg "desc") "inline" "none"}};">{{$firstimg.desc}}</span>
       </div>
     {{end}}
+
     {{ if $title }}
-    <div class="intro-header no-img">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="{{ .Type }}-heading">
-              <img src="/images/logo.jpg/" alt="">
-              {{ if eq .Type "list" }}
-                <h1>{{ if .Data.Singular }}#{{ end }}{{ .Title }}</h1>
-              {{ else }}
-                <h1>{{ with $title }}{{.}}{{ else }}<br/>{{ end }}</h1>
-              {{ end }}
-              {{ if ne .Type "post" }}
-                <hr class="small">
-              {{ end }}
-              {{ if $subtitle }}
-                {{ if eq .Type "page" }}
-                  <span class="{{ .Type }}-subheading">{{ $subtitle }}</span>
-                {{ else }}
-                  <h2 class="{{ .Type }}-subheading">{{ $subtitle }}</h2>
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+              <div class="{{ .Type }}-heading">
+                <h1 class="header-title">
+                  <a href="{{ .Permalink }}">
+                    {{ with $title }}{{.}}{{ else }}<br/>{{ end }}
+                  </a>
+                </h1>
+                {{ if $subtitle }}
+                  <h2 class="{{ .Type }}-subheading header-subtitle">
+                    <a href="{{ .Permalink }}">{{ $subtitle }}</a>
+                  </h2>
                 {{ end }}
-              {{ end }}
-              {{ if eq .Type "post" }}
-                {{ partial "post_meta.html" . }}
-              {{ end }}
+                {{ if eq .Type "post" }}
+                  {{ partial "post_meta.html" . }}
+                {{ end }}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  {{ end }}
+    {{ end }}
   </header>
 {{ else }}
-  <div class="intro-header">
-   
-  </div>
+  <div class="intro-header"></div>
 {{ end }}

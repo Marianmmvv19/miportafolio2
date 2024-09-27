@@ -1,11 +1,114 @@
+<style>
+  /* Estilo general de la barra de navegación */
+.navbar-custom {
+    background-color: #0b2e52;
+    border-bottom: 2px solid #10ad69;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Cambiar el color al hacer scroll */
+.navbar-custom.scrolled {
+    background-color: #159c4f;
+}
+
+/* Estilo del logotipo */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #1da278;
+}
+
+/* Estilo de los enlaces del menú */
+.navbar-nav > li > a {
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+    color: #0c8330;
+}
+
+/* Estilo para enlaces con submenús */
+.navlinks-parent {
+    cursor: pointer;
+    position: relative;
+}
+
+.navlinks-children {
+    display: none;
+    position: absolute;
+    background-color: #118430;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.navlinks-container:hover .navlinks-children {
+    display: block;
+}
+
+.navlinks-children a {
+    color: #ecf0f1;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.navlinks-children a:hover {
+    background-color: #2c3e50;
+}
+
+/* Botón del menú en dispositivos móviles */
+.navbar-toggle {
+    background-color: #26ac50;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+    background-color: #138967;
+}
+
+/* Iconos de las barras del menú */
+.icon-bar {
+    background-color: #ecf0f1;
+}
+
+/* Estilo del avatar/logo */
+.avatar-img-border {
+    border-radius: 50%;
+    border: 3px solid #ecf0f1;
+    padding: 2px;
+    margin-top: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.avatar-img-border:hover {
+    border-color: #3498db;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+</style>
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">{{ i18n "toggleNavigation" }}
-          
-          <img class="avatar-img" src="https://ledezma07.github.io/miportafolio2/image/logo.jpg" alt="{{ .Site.Title }}" />
-        </span>
+        <span class="sr-only">{{ i18n "toggleNavigation" }}</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -31,74 +134,29 @@
             </li>
           {{ end }}
         {{ end }}
-
-        {{ if hugo.IsMultilingual }}
-          {{ if ge (len .Site.Languages) 3 }}
-            <li class="navlinks-container">
-              <a class="navlinks-parent" role="button" tabindex="0">{{ i18n "languageSwitcherLabel" }}</a>
-              <div class="navlinks-children">
-                {{ range .Translations }}
-                  {{ if not (eq .Lang $.Site.Language.Lang) }}
-                  <a href="{{ .Permalink }}">{{ default .Lang .Site.Language.LanguageName }}</a>
-                  {{ end }}
-                {{ end }}
-              </div>
-            </li>
-          {{ else }}
-            <li>
-              {{ if .IsTranslated }}
-                {{ range .Translations }}
-                  <a href="{{ .Permalink }}">{{ default .Lang .Site.Language.LanguageName }}</a>
-                {{ end}}
-              {{ end }}
-            </li>
-          {{ end }}
-        {{ end }}
-
-        {{ if isset .Site.Params "gcse" }}
-          <li>
-            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
-              <span class="hidden-sm hidden-md hidden-lg">{{ i18n "gcseLabelShort" }}</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
-            </a>
-          </li>
-        {{ end }}
       </ul>
     </div>
 
+    <!-- Avatar/Logo -->
     {{ if isset .Site.Params "logo" }}
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a title="{{ .Site.Title }}" href="{{ "" | absLangURL }}">
-          {{- $image := resources.Get ( $.Site.Params.logo) -}}
-          {{ if $image }}
-            <img class="avatar-img" src="{{ ($image.Fit "300x300 webp q100").Permalink }}" alt="{{ .Site.Title }}" />
-          {{else}}
-            <img class="avatar-img" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
-           {{end}}
+            <img class="avatar-img" src="https://ledezma07.github.io/miportafolio2/image/logo.jpg" alt="{{ .Site.Title }}" />
           </a>
         </div>
       </div>
     {{ end }}
-
   </div>
 </nav>
 
-<!-- Search Modal -->
-{{ if isset .Site.Params "gcse" }}
-  <div id="modalSearch" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">{{ i18n "gcseLabelLong" . }}</h4>
-        </div>
-        <div class="modal-body">
-          <gcse:search></gcse:search>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">{{ i18n "gcseClose" }}</button>
-        </div>
-      </div>
-    </div>
-  </div>
-{{ end }}
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.navbar-custom');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>

@@ -41,7 +41,7 @@
 
   <meta name="twitter:title" content="Acercades" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="generator" content="Hugo 0.134.0">
+  <meta name="generator" content="Hugo 0.134.3">
   <link rel="alternate" href="http://localhost:1313/miportafolio2/index.xml" type="application/rss+xml" title="Mi Portafolio Personal Ledezma"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://localhost:1313/miportafolio2/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -50,14 +50,117 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <style>
+   
+.navbar-custom {
+    background-color: #0b2e52;
+    border-bottom: 2px solid #10ad69;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ 
+.navbar-custom.scrolled {
+    background-color: #159c4f;
+}
+
+ 
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #1da278;
+}
+
+ 
+.navbar-nav > li > a {
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+    color: #0c8330;
+}
+
+ 
+.navlinks-parent {
+    cursor: pointer;
+    position: relative;
+}
+
+.navlinks-children {
+    display: none;
+    position: absolute;
+    background-color: #118430;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.navlinks-container:hover .navlinks-children {
+    display: block;
+}
+
+.navlinks-children a {
+    color: #ecf0f1;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.navlinks-children a:hover {
+    background-color: #2c3e50;
+}
+
+ 
+.navbar-toggle {
+    background-color: #26ac50;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+    background-color: #138967;
+}
+
+ 
+.icon-bar {
+    background-color: #ecf0f1;
+}
+
+ 
+.avatar-img-border {
+    border-radius: 50%;
+    border: 3px solid #ecf0f1;
+    padding: 2px;
+    margin-top: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.avatar-img-border:hover {
+    border-color: #3498db;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+</style>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation
-          
-          <img class="avatar-img" src="https://ledezma07.github.io/miportafolio2/image/logo.jpg" alt="Mi Portafolio Personal Ledezma" />
-        </span>
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -92,22 +195,135 @@
             </li>
           
         
-
-        
-
-        
       </ul>
     </div>
 
     
-
+    
   </div>
 </nav>
 
+<script>
+  window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.navbar-custom');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
 
+    <style>
+  .elegant-header {
+    position: relative;
+    color: #fff;
+    font-family: 'Lora', serif;
+}
 
+.big-img {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header-title {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.header-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-title a:hover {
+    color: #f8b500;
+}
+
+.header-subtitle {
+    font-size: 1.5em;
+    color: #f8b500;
+}
+
+.header-subtitle a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-subtitle a:hover {
+    color: #fff;
+}
+
+.no-img {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.no-img h1 {
+    color: #333;
+}
+
+.intro-header.no-img h1 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.intro-header.no-img h1 a:hover {
+    color: #f8b500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img-desc {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: none;
+}
+
+.intro-header:hover .img-desc {
+    display: block;
+}
+
+ 
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5em;
+    }
+    .header-subtitle {
+        font-size: 1.2em;
+    }
+}
+
+</style>
 
 
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -166,29 +382,28 @@
 
   
 
-  <header class="header-section ">
+  <header class="header-section elegant-header ">
     
+
     
-    <div class="intro-header no-img">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="acercade-heading">
-              <img src="/images/logo.jpg/" alt="">
-              
-                <h1>Acercades</h1>
-              
-              
-                <hr class="small">
-              
-              
-              
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+              <div class="acercade-heading">
+                <h1 class="header-title">
+                  <a href="http://localhost:1313/miportafolio2/acercade/">
+                    Acercades
+                  </a>
+                </h1>
+                
+                
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  
+    
   </header>
 
 
@@ -201,7 +416,7 @@
           
             <article class="post-preview">
     <a href="http://localhost:1313/miportafolio2/acercade/acercadelmundo/">
-        <h2 class="post-title">Acercadelmundo</h2>
+        <h2 class="post-title">Acerca del Mundo</h2>
         
         
         
@@ -227,12 +442,22 @@
     </p>
     <div class="post-entry">
         
-        <p>Change of config file detected, rebuilding site (#2).
-2024-09-08 11:41:39.447 -0400
-WARN  calling IsSet with unsupported type &ldquo;ptr&rdquo; (*page.siteWrapper) will always return false.
-WARN  calling IsSet with unsupported type &ldquo;invalid&rdquo; (<!-- raw HTML omitted -->) will always return false.
-Web Server is available at http://localhost:54327/ (bind address 127.0.0.1)</p>
-
+        <h1 id="acerca-del-mundo">Acerca del Mundo</h1>
+<p>En este artículo, exploraremos el fascinante mundo del desarrollo web estático utilizando <a href="https://gohugo.io/">Hugo</a>. Hugo es una herramienta robusta que simplifica la creación y gestión de sitios web estáticos.</p>
+<h2 id="resumen-de-la-actualización">Resumen de la Actualización</h2>
+<p>Recientemente se detectó un cambio en el archivo de configuración, lo que llevó a una reconstrucción del sitio. A continuación, se presentan los detalles de la actualización:</p>
+<ul>
+<li><strong>Fecha y Hora de la Reconstrucción</strong>: 2024-09-08 11:41:39.447 -0400</li>
+<li><strong>Mensaje de Advertencia</strong>:
+<ul>
+<li><strong>Advertencia 1</strong>: Llamada a <code>IsSet</code> con tipo no soportado &ldquo;ptr&rdquo; (*page.siteWrapper) siempre devolverá false.</li>
+<li><strong>Advertencia 2</strong>: Llamada a <code>IsSet</code> con tipo no soportado &ldquo;invalid&rdquo; (<!-- raw HTML omitted -->) siempre devolverá false.</li>
+</ul>
+</li>
+</ul>
+<h2 id="estado-del-servidor-web">Estado del Servidor Web</h2>
+<p>El servidor web está disponible en la siguiente dirección:</p>
+        <a href="http://localhost:1313/miportafolio2/acercade/acercadelmundo/" class="post-read-more">[Read More]</a>
         
     </div>
 
@@ -242,7 +467,7 @@ Web Server is available at http://localhost:54327/ (bind address 127.0.0.1)</p>
           
             <article class="post-preview">
     <a href="http://localhost:1313/miportafolio2/acercade/acercadelcreador/">
-        <h2 class="post-title">Acercadelcreador</h2>
+        <h2 class="post-title">Acerca del Creador</h2>
         
         
         
@@ -268,8 +493,24 @@ Web Server is available at http://localhost:54327/ (bind address 127.0.0.1)</p>
     </p>
     <div class="post-entry">
         
-        <p>En este artículo aprenderás a cambiar el diseño un sitio web realizado con Hugo, el generador de sitios estáticos, y personalizar un tema para adaptarlo a tus necesidades, alterando HTML, CSS, imágenes, iconos&hellip;</p>
-
+        <h1 id="acerca-del-creador">Acerca del Creador</h1>
+<p>En este artículo, <strong>aprenderás a cambiar el diseño de un sitio web</strong> realizado con <a href="https://gohugo.io/">Hugo</a>, el generador de sitios estáticos.</p>
+<h2 id="qué-es-hugo">¿Qué es Hugo?</h2>
+<p>Hugo es una herramienta poderosa que permite crear sitios web estáticos de manera rápida y eficiente. Con Hugo, puedes:</p>
+<ul>
+<li><strong>Personalizar Temas</strong>: Adapta los temas a tus necesidades mediante la modificación de HTML, CSS, imágenes e iconos.</li>
+<li><strong>Crear Contenido</strong>: Escribe y organiza el contenido de tu sitio utilizando archivos Markdown.</li>
+<li><strong>Desplegar Sitios Web</strong>: Genera un sitio estático listo para desplegar en servidores o plataformas de alojamiento.</li>
+</ul>
+<h2 id="pasos-para-personalizar-un-tema">Pasos para Personalizar un Tema</h2>
+<ol>
+<li><strong>Modificar HTML</strong>: Ajusta las plantillas HTML para cambiar la estructura y el diseño de tu sitio.</li>
+<li><strong>Actualizar CSS</strong>: Cambia los estilos CSS para mejorar la apariencia visual.</li>
+<li><strong>Incorporar Imágenes y Iconos</strong>: Añade imágenes y iconos para mejorar la experiencia del usuario.</li>
+</ol>
+<h2 id="conclusión">Conclusión</h2>
+<p>Personalizar un tema en Hugo te permite tener un control total sobre el diseño de tu sitio web. Conociendo cómo trabajar con HTML y CSS, puedes hacer que tu sitio refleje tu estilo y necesidades específicas.</p>
+        <a href="http://localhost:1313/miportafolio2/acercade/acercadelcreador/" class="post-read-more">[Read More]</a>
         
     </div>
 
@@ -307,7 +548,7 @@ Web Server is available at http://localhost:54327/ (bind address 127.0.0.1)</p>
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.134.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.134.3</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
