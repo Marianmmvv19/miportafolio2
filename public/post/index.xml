@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mi Portafolio Editado Marian</title>
-    <link>https://Marianmmvv19.github.io/miportafolio2/post/</link>
+    <link>http://localhost:1313/miportafolio2/post/</link>
     <description>Recent content in Posts on Mi Portafolio Editado Marian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Sep 2024 14:56:27 -0400</lastBuildDate>
-    <atom:link href="https://Marianmmvv19.github.io/miportafolio2/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/miportafolio2/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Postuno</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/post/postuno/</link>
+      <link>http://localhost:1313/miportafolio2/post/postuno/</link>
       <pubDate>Sat, 07 Sep 2024 14:56:27 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/post/postuno/</guid>
+      <guid>http://localhost:1313/miportafolio2/post/postuno/</guid>
       <description>&lt;h1 id=&#34;segundo-post&#34;&gt;Segundo Post&lt;/h1&gt;&#xA;&lt;p&gt;¡Bienvenido al segundo post de la página principal! En esta entrada, exploraremos algunos de los lenguajes y tecnologías que utilizo en mis proyectos, así como una breve mención sobre los temas actuales de la materia SIS 2420 - &amp;ldquo;B&amp;rdquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tecnologías-y-lenguajes-usados&#34;&gt;Tecnologías y Lenguajes Usados&lt;/h2&gt;&#xA;&lt;p&gt;En el desarrollo web, manejo una variedad de tecnologías y lenguajes que me permiten crear sitios web funcionales y visualmente atractivos. Aquí te presento algunos de los más relevantes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sobre Marian Vásquez</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/post/postdos/</link>
+      <link>http://localhost:1313/miportafolio2/post/postdos/</link>
       <pubDate>Sat, 07 Sep 2024 01:12:28 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/post/postdos/</guid>
+      <guid>http://localhost:1313/miportafolio2/post/postdos/</guid>
       <description>&lt;h1 id=&#34;sobre-marian-vásquez&#34;&gt;Sobre Marian Vásquez&lt;/h1&gt;&#xA;&lt;p&gt;¡Hola! Soy Marian Vásquez, una apasionada creadora de páginas web con un entusiasmo particular por el diseño y la tecnología web. Desde que comencé en el mundo del desarrollo web, he estado inmersa en la creación de sitios dinámicos y funcionales que no solo cumplen con las necesidades de mis clientes, sino que también brindan una experiencia visualmente atractiva.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mi-pasión-por-el-desarrollo-web&#34;&gt;Mi Pasión por el Desarrollo Web&lt;/h2&gt;&#xA;&lt;p&gt;Mi interés en el desarrollo web comenzó hace unos años, cuando me di cuenta de la increíble capacidad que tienen las herramientas digitales para transformar ideas en realidades virtuales. Disfruto trabajando con HTML, CSS, y JavaScript, así como explorando nuevas tecnologías y métodos que permiten crear sitios web innovadores y eficientes.&lt;/p&gt;</description>
     </item>
   </channel>

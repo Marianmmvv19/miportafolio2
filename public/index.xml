@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mi Portafolio Editado Marian</title>
-    <link>https://Marianmmvv19.github.io/miportafolio2/</link>
+    <link>http://localhost:1313/miportafolio2/</link>
     <description>Recent content on Mi Portafolio Editado Marian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Sep 2024 11:42:41 -0400</lastBuildDate>
-    <atom:link href="https://Marianmmvv19.github.io/miportafolio2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/miportafolio2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Acerca del Mundo</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/acercade/acercadelmundo/</link>
+      <link>http://localhost:1313/miportafolio2/acercade/acercadelmundo/</link>
       <pubDate>Sun, 08 Sep 2024 11:42:41 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/acercade/acercadelmundo/</guid>
+      <guid>http://localhost:1313/miportafolio2/acercade/acercadelmundo/</guid>
       <description>&lt;h1 id=&#34;acerca-del-mundo&#34;&gt;Acerca del Mundo&lt;/h1&gt;&#xA;&lt;p&gt;En este artículo, exploraremos el fascinante mundo del desarrollo web estático utilizando &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. Hugo es una herramienta robusta que simplifica la creación y gestión de sitios web estáticos.&lt;/p&gt;&#xA;&lt;h2 id=&#34;resumen-de-la-actualización&#34;&gt;Resumen de la Actualización&lt;/h2&gt;&#xA;&lt;p&gt;Recientemente se detectó un cambio en el archivo de configuración, lo que llevó a una reconstrucción del sitio. A continuación, se presentan los detalles de la actualización:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fecha y Hora de la Reconstrucción&lt;/strong&gt;: 2024-09-08 11:41:39.447 -0400&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mensaje de Advertencia&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Advertencia 1&lt;/strong&gt;: Llamada a &lt;code&gt;IsSet&lt;/code&gt; con tipo no soportado &amp;ldquo;ptr&amp;rdquo; (*page.siteWrapper) siempre devolverá false.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Advertencia 2&lt;/strong&gt;: Llamada a &lt;code&gt;IsSet&lt;/code&gt; con tipo no soportado &amp;ldquo;invalid&amp;rdquo; (&lt;!-- raw HTML omitted --&gt;) siempre devolverá false.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;estado-del-servidor-web&#34;&gt;Estado del Servidor Web&lt;/h2&gt;&#xA;&lt;p&gt;El servidor web está disponible en la siguiente dirección:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Acerca del Creador</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/acercade/acercadelcreador/</link>
+      <link>http://localhost:1313/miportafolio2/acercade/acercadelcreador/</link>
       <pubDate>Sun, 08 Sep 2024 11:38:21 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/acercade/acercadelcreador/</guid>
+      <guid>http://localhost:1313/miportafolio2/acercade/acercadelcreador/</guid>
       <description>&lt;h1 id=&#34;acerca-del-creador&#34;&gt;Acerca del Creador&lt;/h1&gt;&#xA;&lt;p&gt;En este artículo, &lt;strong&gt;aprenderás a cambiar el diseño de un sitio web&lt;/strong&gt; realizado con &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, el generador de sitios estáticos.&lt;/p&gt;&#xA;&lt;h2 id=&#34;qué-es-hugo&#34;&gt;¿Qué es Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;Hugo es una herramienta poderosa que permite crear sitios web estáticos de manera rápida y eficiente. Con Hugo, puedes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Personalizar Temas&lt;/strong&gt;: Adapta los temas a tus necesidades mediante la modificación de HTML, CSS, imágenes e iconos.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Crear Contenido&lt;/strong&gt;: Escribe y organiza el contenido de tu sitio utilizando archivos Markdown.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Desplegar Sitios Web&lt;/strong&gt;: Genera un sitio estático listo para desplegar en servidores o plataformas de alojamiento.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pasos-para-personalizar-un-tema&#34;&gt;Pasos para Personalizar un Tema&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modificar HTML&lt;/strong&gt;: Ajusta las plantillas HTML para cambiar la estructura y el diseño de tu sitio.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Actualizar CSS&lt;/strong&gt;: Cambia los estilos CSS para mejorar la apariencia visual.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Incorporar Imágenes y Iconos&lt;/strong&gt;: Añade imágenes y iconos para mejorar la experiencia del usuario.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;&#xA;&lt;p&gt;Personalizar un tema en Hugo te permite tener un control total sobre el diseño de tu sitio web. Conociendo cómo trabajar con HTML y CSS, puedes hacer que tu sitio refleje tu estilo y necesidades específicas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Postuno</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/post/postuno/</link>
+      <link>http://localhost:1313/miportafolio2/post/postuno/</link>
       <pubDate>Sat, 07 Sep 2024 14:56:27 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/post/postuno/</guid>
+      <guid>http://localhost:1313/miportafolio2/post/postuno/</guid>
       <description>&lt;h1 id=&#34;segundo-post&#34;&gt;Segundo Post&lt;/h1&gt;&#xA;&lt;p&gt;¡Bienvenido al segundo post de la página principal! En esta entrada, exploraremos algunos de los lenguajes y tecnologías que utilizo en mis proyectos, así como una breve mención sobre los temas actuales de la materia SIS 2420 - &amp;ldquo;B&amp;rdquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tecnologías-y-lenguajes-usados&#34;&gt;Tecnologías y Lenguajes Usados&lt;/h2&gt;&#xA;&lt;p&gt;En el desarrollo web, manejo una variedad de tecnologías y lenguajes que me permiten crear sitios web funcionales y visualmente atractivos. Aquí te presento algunos de los más relevantes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Redes Sociales</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/contactos/redessociales/</link>
+      <link>http://localhost:1313/miportafolio2/contactos/redessociales/</link>
       <pubDate>Sat, 07 Sep 2024 14:44:12 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/contactos/redessociales/</guid>
+      <guid>http://localhost:1313/miportafolio2/contactos/redessociales/</guid>
       <description>&lt;p&gt;¡Conéctate con nosotros a través de nuestras redes sociales!&lt;/p&gt;&#xA;&lt;h2 id=&#34;facebook&#34;&gt;Facebook&lt;/h2&gt;&#xA;&lt;p&gt;Síguenos en &lt;a href=&#34;https://www.facebook.com/tu-perfil&#34;&gt;Facebook&lt;/a&gt; para estar al tanto de nuestras últimas actualizaciones y noticias.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whatsapp&#34;&gt;WhatsApp&lt;/h2&gt;&#xA;&lt;p&gt;También puedes contactarnos directamente a través de &lt;a href=&#34;https://wa.me/1234567890&#34;&gt;WhatsApp&lt;/a&gt; para consultas rápidas y soporte.&lt;/p&gt;&#xA;&lt;p&gt;¡Estamos aquí para ayudarte!&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Contacto</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/contactos/contacto1/</link>
+      <link>http://localhost:1313/miportafolio2/contactos/contacto1/</link>
       <pubDate>Sat, 07 Sep 2024 01:21:58 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/contactos/contacto1/</guid>
+      <guid>http://localhost:1313/miportafolio2/contactos/contacto1/</guid>
       <description>&lt;p&gt;¡Hola!&lt;/p&gt;&#xA;&lt;p&gt;Soy [Marian Vasquez] y este es mi primer formulario de contacto. A continuación, te comparto mis datos de contacto:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Número de Celular&lt;/strong&gt;: 704-325-25&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ciudad&lt;/strong&gt;: Oruro, Bolivia&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Estudios Realizados&lt;/strong&gt;: Facultad Nacional de Ingeniería&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Carrera&lt;/strong&gt;: Ingeniería de Sistemas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cómo-puedo-ayudarte&#34;&gt;¿Cómo Puedo Ayudarte?&lt;/h2&gt;&#xA;&lt;p&gt;Si necesitas ponerte en contacto conmigo para consultas, colaboraciones o cualquier otro motivo, no dudes en enviarme un mensaje.&lt;/p&gt;&#xA;&lt;h2 id=&#34;información-adicional&#34;&gt;Información Adicional&lt;/h2&gt;&#xA;&lt;p&gt;Puedes encontrarme en las siguientes plataformas:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Correo Electrónico&lt;/strong&gt;: &lt;a href=&#34;mailto:tuemail@dominio.com&#34;&gt;tuemail@dominio.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://www.linkedin.com/in/tu-perfil&#34;&gt;Tu Perfil de LinkedIn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;¡Espero tener noticias tuyas pronto!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contacto</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/contactos/contacto2/</link>
+      <link>http://localhost:1313/miportafolio2/contactos/contacto2/</link>
       <pubDate>Sat, 07 Sep 2024 01:21:58 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/contactos/contacto2/</guid>
+      <guid>http://localhost:1313/miportafolio2/contactos/contacto2/</guid>
       <description>&lt;p&gt;¡Hola!&lt;/p&gt;&#xA;&lt;p&gt;Soy [Tu Nombre] y este es mi primer formulario de contacto. A continuación, te comparto mis datos de contacto:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Número de Celular&lt;/strong&gt;: 704-325-25&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ciudad&lt;/strong&gt;: Oruro, Bolivia&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Estudios Realizados&lt;/strong&gt;: Facultad Nacional de Ingeniería&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Carrera&lt;/strong&gt;: Ingeniería de Sistemas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cómo-puedo-ayudarte&#34;&gt;¿Cómo Puedo Ayudarte?&lt;/h2&gt;&#xA;&lt;p&gt;Si necesitas ponerte en contacto conmigo para consultas, colaboraciones o cualquier otro motivo, no dudes en enviarme un mensaje.&lt;/p&gt;&#xA;&lt;h2 id=&#34;información-adicional&#34;&gt;Información Adicional&lt;/h2&gt;&#xA;&lt;p&gt;Puedes encontrarme en las siguientes plataformas:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Correo Electrónico&lt;/strong&gt;: &lt;a href=&#34;mailto:tuemail@dominio.com&#34;&gt;tuemail@dominio.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://www.linkedin.com/in/tu-perfil&#34;&gt;Tu Perfil de LinkedIn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;¡Espero tener noticias tuyas pronto!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contacto</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/contactodos/</link>
+      <link>http://localhost:1313/miportafolio2/contactodos/</link>
       <pubDate>Sat, 07 Sep 2024 01:20:33 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/contactodos/</guid>
+      <guid>http://localhost:1313/miportafolio2/contactodos/</guid>
       <description>&lt;h1 id=&#34;contacto&#34;&gt;Contacto&lt;/h1&gt;&#xA;&lt;p&gt;¡Bienvenido a la sección de contacto! Aquí encontrarás la información necesaria para ponerte en contacto conmigo.&lt;/p&gt;&#xA;&lt;p&gt;Para consultas, dudas o cualquier otra información, no dudes en comunicarte utilizando los siguientes medios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Número de Teléfono&lt;/strong&gt;: &lt;a href=&#34;tel:+70432525&#34;&gt;752-54-841&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Correo Electrónico&lt;/strong&gt;: &lt;a href=&#34;mailto:tu.email@example.com&#34;&gt;tu.email@example.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Estoy aquí para ayudarte con cualquier pregunta que puedas tener. ¡Espero saber de ti pronto!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contacto</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/contacto/</link>
+      <link>http://localhost:1313/miportafolio2/contacto/</link>
       <pubDate>Sat, 07 Sep 2024 01:12:28 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/contacto/</guid>
+      <guid>http://localhost:1313/miportafolio2/contacto/</guid>
       <description>&lt;p&gt;¡Gracias por tu interés en ponerte en contacto! Aquí tienes la información necesaria:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Teléfono:&lt;/strong&gt; [752-54-841](tel:+591 75254841)&lt;/p&gt;&#xA;&lt;p&gt;Para consultas, sugerencias o cualquier otra información, no dudes en contactarnos.&lt;/p&gt;&#xA;&lt;p&gt;Estamos aquí para ayudarte.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Sobre Marian Vásquez</title>
-      <link>https://Marianmmvv19.github.io/miportafolio2/post/postdos/</link>
+      <link>http://localhost:1313/miportafolio2/post/postdos/</link>
       <pubDate>Sat, 07 Sep 2024 01:12:28 -0400</pubDate>
-      <guid>https://Marianmmvv19.github.io/miportafolio2/post/postdos/</guid>
+      <guid>http://localhost:1313/miportafolio2/post/postdos/</guid>
       <description>&lt;h1 id=&#34;sobre-marian-vásquez&#34;&gt;Sobre Marian Vásquez&lt;/h1&gt;&#xA;&lt;p&gt;¡Hola! Soy Marian Vásquez, una apasionada creadora de páginas web con un entusiasmo particular por el diseño y la tecnología web. Desde que comencé en el mundo del desarrollo web, he estado inmersa en la creación de sitios dinámicos y funcionales que no solo cumplen con las necesidades de mis clientes, sino que también brindan una experiencia visualmente atractiva.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mi-pasión-por-el-desarrollo-web&#34;&gt;Mi Pasión por el Desarrollo Web&lt;/h2&gt;&#xA;&lt;p&gt;Mi interés en el desarrollo web comenzó hace unos años, cuando me di cuenta de la increíble capacidad que tienen las herramientas digitales para transformar ideas en realidades virtuales. Disfruto trabajando con HTML, CSS, y JavaScript, así como explorando nuevas tecnologías y métodos que permiten crear sitios web innovadores y eficientes.&lt;/p&gt;</description>
     </item>
   </channel>
