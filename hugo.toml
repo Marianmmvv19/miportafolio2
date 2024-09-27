@@ -1,5 +1,6 @@
 
-baseURL = 'https://Marianmmvv19.github.io/miportafolio2/'
+baseURL = "https://main--portafolioconhugo.netlify.app/"
+
 languageCode = 'en-us'
 title = 'Mi Portafolio Editado Marian'
 
