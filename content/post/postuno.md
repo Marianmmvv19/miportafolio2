@@ -24,32 +24,16 @@ En el desarrollo web, manejo una variedad de tecnologías y lenguajes que me per
 ## Ejemplo de Diseño de Columnas
 
 {{< columns >}}
-**Columna 1**  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Proin eu arcu id nisi aliquet auctor. Nullam viverra dolor id erat tincidunt, a vehicula metus sodales.
+  {{< column >}}
+  **Columna 1**  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Proin eu arcu id nisi aliquet auctor. Nullam viverra dolor id erat tincidunt, a vehicula metus sodales.
+  {{< /column >}}
 
-**Columna 1**  
-Vestibulum sed diam nec arcu placerat hendrerit. Suspendisse potenti. Duis vitae magna et ante consequat fermentum non vel sapien.
-
-**Columna 1**  
-Curabitur gravida tellus eget odio fermentum, ut venenatis nunc tempus. Integer nec lorem eget lacus venenatis auctor. Ut interdum turpis ac bibendum posuere.
-
-**Columna 1**  
-Sed varius massa sed ex varius luctus. Aenean hendrerit dolor et sapien tempus, in pretium elit aliquam.
-
-{{< column >}}
-**Columna 2**  
-Maecenas auctor justo at sagittis varius. In euismod augue ut nisi fringilla, a luctus arcu gravida. Nullam sed sapien eu lorem interdum congue.
-
-**Columna 2**  
-Phasellus consequat sapien id nisi gravida, sed facilisis metus auctor. Donec nec leo nec libero posuere commodo.
-
-**Columna 2**  
-Proin scelerisque nulla et velit pharetra auctor. Donec vehicula neque et metus fringilla, sed interdum nunc bibendum.
-
-**Columna 2**  
-Ut et eros non sapien gravida tincidunt. Cras vel purus ac velit fringilla aliquam vel ut odio.
-
-{{< endcolumns >}}
+  {{< column >}}
+  **Columna 2**  
+  Maecenas auctor justo at sagittis varius. In euismod augue ut nisi fringilla, a luctus arcu gravida. Nullam sed sapien eu lorem interdum congue.
+  {{< /column >}}
+{{< /columns >}}
 
 ## Información Adicional
 

@@ -1,5 +1,5 @@
 
-baseURL = 'https://ledezma07.github.io/miportafolio2/'
+baseURL = 'https://Marianmmvv19.github.io/miportafolio2/'
 languageCode = 'en-us'
 title = 'Mi Portafolio Editado Marian'
 
@@ -31,3 +31,8 @@ title = 'Mi Portafolio Editado Marian'
   title="ACERCA DE"
   url = "/acercade/"
   weight=0
+[[build]]
+  command = "hugo"
+  publish = "public"
+  [[build.environment]]
+    HUGO_VERSION = "0.85.0"
